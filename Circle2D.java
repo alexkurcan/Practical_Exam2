@@ -1,10 +1,11 @@
 /*
  * Name: Circle2D
- * Purpose: Represents a circle in a 2D plane with methods to calculate area, perimeter,
- *          and check for point containment, circle containment, and overlap with another circle.
+ * Purpose: Represents a circle in a 2D plane it has methods that calulate the area, perimeter, if there is a point within the cirlce
+ *          if there is an overlapping cirlce, and if a cirlce is contained within another circle.
  * Programmer: Alex Kurcan
  * Date: 10/24/2025
  */
+
 
 public class Circle2D {
 
@@ -74,15 +75,15 @@ public class Circle2D {
         return distance < (radius + c.getRadius());
     }
 
-    // Main method (very basic tester)
+    // Tester method
     public static void main(String[] args) {
         Circle2D c1 = new Circle2D(0, 0, 5);
         Circle2D c2 = new Circle2D(2, 2, 2);
 
         System.out.println("Area: " + c1.getArea());
         System.out.println("Perimeter: " + c1.getPerimeter());
-        System.out.println("Contains point (1,1)? " + c1.contains(1, 1));
-        System.out.println("Contains c2? " + c1.contains(c2));
-        System.out.println("Overlaps c2? " + c1.overlaps(c2));
+        System.out.println("Contains the point (1,1): " + c1.contains(1, 1));
+        System.out.println("Contains a second Circle? " + c1.contains(c2));
+        System.out.println("Overlaps with a second Circle? " + c1.overlaps(c2));
     }
 }
