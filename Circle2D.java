@@ -1,7 +1,7 @@
 /*
  * Name: Circle2D
- * Purpose: Represents a circle in a 2D plane it has methods that calulate the area, perimeter, if there is a point within the cirlce
- *          if there is an overlapping cirlce, and if a cirlce is contained within another circle.
+ * Purpose: Represents a circle in a 2D plane it has methods that calculate the area, perimeter, if there is a point within the cirlce
+ *          if there is an overlapping circle, and if a circle is contained within another circle.
  * Programmer: Alex Kurcan
  * Date: 10/24/2025
  */
